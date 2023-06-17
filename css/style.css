@@ -222,7 +222,7 @@ h5 {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-	width: 8px;
+	width: 0px;
 	border-radius: 100vw;
 }
 
