@@ -207,6 +207,7 @@ h5 {
 	margin-top: 1.25rem;
 	text-align: center;
 	font-size: 1.8rem;
+	z-index: 100;
   }
 @media (max-width: 800px) {
 	h5 {
@@ -233,38 +234,67 @@ h5 {
 
 /*cursor*/
 
-#glow {
+
+
+  
+:root {
+	--glow-size: 30rem;
+	--glow-size-hover: 10rem;
+
+	--blur: 12rem;
+	--blur--hover: 5rem;
+  }
+  
+  #glow {
 	background-color: rgb(255, 255, 255);
-	height: 40rem;
+	height: var(--glow-size);
 	aspect-ratio: 1;
 	position: fixed;
-	filter: blur(7rem);
+	filter: blur(var(--blur));
 	border-radius: 50%;
-	z-index: -1;
-	opacity: 0.15;
+	opacity: 0.6;
 	transform: translate(-50%, -50%);
 	transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out 0s, filter 0.5s;
-}
-
-#glow.hover {
+  }
+  
+  
+  
+  #glow.hover {
+	height: var(--glow-size-hover);
 	background-color: rgb(255, 255, 255);
-	transform: translate(-50%, -50%) scale(1.);
-	/* Aumento de tamaño */
-	opacity: 0.15;
-	height: 16rem;
-	animation: animateHeight 0.8s ease-in-out;
-
-}
-
-@keyframes animateHeight {
+	transform: translate(-50%, -50%) scale(1.2);
+	opacity: 0.6;
+	filter: blur(var(--blur--hover));
+	animation: animateHeight 0.4s ease-in-out;
+  }
+  
+  @keyframes animateHeight {
 	from {
-		height: 40rem;
+	  height: var(--glow-size);
+	  filter: blur(var(--blur));
 	}
-
 	to {
-		height: 16rem;
+	  height: var(--glow-size-hover);
+	  filter: blur(var(--blur--hover));
 	}
-}
+  }
+  
+  #glow.reset {
+	transform: translate(-50%, -50%) scale(1);
+	height: var(--glow-size);
+	animation: resetHeight 0.5s ease;
+  }
+  
+  @keyframes resetHeight {
+	from {
+	  height: var(--glow-size-hover);
+	  filter: blur(var(--blur--hover));
+	}
+	to {
+	  height: var(--glow-size);
+	  filter: blur(var(--blur));
+	}
+  }
 
 
 /* Scrollbar */

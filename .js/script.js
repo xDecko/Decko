@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
 //CURSOR LIGHT
 
 window.onpointermove = event => {
@@ -41,14 +42,18 @@ window.onpointermove = event => {
 
 //LIGHT EFFECTS
 
-function changeGlowColor() {
+function changeGlowSize() {
   var glow = document.getElementById("glow");
   glow.classList.add("hover");
 }
 
-function resetGlowColor() {
+function resetGlowSize() {
   var glow = document.getElementById("glow");
   glow.classList.remove("hover");
+  glow.classList.add("reset");
+  setTimeout(function() {
+    glow.classList.remove("reset");
+  }, 600);
 }
 
 
