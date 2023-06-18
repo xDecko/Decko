@@ -27,6 +27,17 @@ body {
 	}
 }
 
+/*Custom icons*/
+
+.material-symbols-outlined {
+	color: #fff;
+	font-size: 5rem;
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 100,
+		'GRAD' -25,
+		'opsz' 48
+}
 
 /* Nav */
 .navbar {
@@ -52,10 +63,14 @@ body {
 .navbar-right {
 	width: 15rem;
 	margin-right: 2rem;
-
 	justify-content: center;
+	animation: scale 0.5s ease-in-out;
+}  
 
+.navbar-right:hover{
+	transform: scale(1.1);
 }
+
 
 #nav-btn-left {
 	border-radius: 5px 0 0 5px;
@@ -65,6 +80,10 @@ body {
 
 /* Container */
 
+.main{
+	margin-bottom: 12rem;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -72,7 +91,23 @@ body {
 	align-items: center;
 	height: 100vh;
 }
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	margin-top: 12rem;
+}
 
+.cv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
 
 .content {
 	display: flex;
@@ -81,19 +116,33 @@ body {
 	align-items: center;
 	text-align: center;
 	color: white;
-	margin-top: 20rem;
+	margin-top: 14rem;
 }
 
 .btn-group {
 	display: flex;
 	justify-content: center;
 	margin-top: 1rem;
+
 	/* Ajusta el espacio entre los botones y el texto */
 }
 
 #btnarrow {
-	margin-top: 15rem;
+	margin-top: 11rem;
+	animation: fade-in 3s ease-in-out infinite;
 }
+#arrowSize{
+	font-size: 7rem;
+}
+  
+@keyframes fade-in {
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+  }
+
+
+  
 
 
 
@@ -105,8 +154,8 @@ body {
 	background-color: rgba(238, 255, 0, 0);
 	color: #fff;
 	text-decoration: none;
-	font-weight: normal;
-	font-size: 1.4rem;
+	font-weight:normal;
+	font-size: 1.8rem;
 	transition: background-color 0.001s ease;
 }
 
@@ -133,25 +182,26 @@ body {
 }
 
 h1 {
+	font-family: 'raleway', sans-serif;
 	display: inline-block;
 	width: auto;
 	line-height: 1;
 	font-weight: lighter;
 	margin: 0;
 	text-indent: center;
-	font-size: 6.3rem;
+	font-size: 6.8rem;
 }
 
 
 h5 {
-	width: 45rem;
+	width: 57rem;
 	font-weight: lighter;
 	margin: 0;
 	margin-top: 1.25rem;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
   }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 	h5 {
 	  width: 90%; /* Cambia el ancho del elemento para ocupar el 90% del contenedor */ /* Reduce el tamaño de fuente para adaptarse a pantallas más pequeñas */
 	}
@@ -169,17 +219,7 @@ h5 {
 
 
 
-/*Custom icons*/
 
-.material-symbols-outlined {
-	color: #fff;
-	font-size: 5rem;
-	font-variation-settings:
-		'FILL' 0,
-		'wght' 100,
-		'GRAD' -25,
-		'opsz' 48
-}
 
 
 
@@ -201,10 +241,10 @@ h5 {
 
 #glow.hover {
 	background-color: rgb(255, 255, 255);
-	transform: translate(-50%, -50%) scale(1.2);
+	transform: translate(-50%, -50%) scale(1.);
 	/* Aumento de tamaño */
 	opacity: 0.15;
-	height: 40rem;
+	height: 16rem;
 	animation: animateHeight 0.8s ease-in-out;
 
 }
