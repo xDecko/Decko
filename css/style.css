@@ -6,6 +6,7 @@ html {
 	scroll-behavior:smooth;
 }
 
+
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -123,13 +124,13 @@ body {
 	display: flex;
 	justify-content: center;
 	margin-top: 1rem;
+	z-index: 1;
 
 	/* Ajusta el espacio entre los botones y el texto */
 }
 
 #btnarrow {
 	margin-top: 11rem;
-	animation: fade-in 2s ease-in-out infinite;
 	animation: fade-in 2s ease-in-out infinite;
 }
 #arrowSize{
@@ -143,12 +144,11 @@ body {
   }
 
 
-  
+
 
 
 
 .btn {
-	width: 10rem;
 	width: 10rem;
 	display: inline-block;
 	padding: 0.5rem 1rem;
@@ -156,8 +156,6 @@ body {
 	background-color: rgba(238, 255, 0, 0);
 	color: #fff;
 	text-decoration: none;
-	font-weight:bold;
-	font-size: 1.6rem;
 	font-weight:bold;
 	font-size: 1.6rem;
 	transition: background-color 0.001s ease;
@@ -187,15 +185,12 @@ body {
 
 h1 {
 	font-family: 'jost', sans-serif;
-	font-family: 'jost', sans-serif;
 	display: inline-block;
 	width: auto;
 	line-height: 1;
 	font-weight: bold;
-	font-weight: bold;
 	margin: 0;
 	text-indent: center;
-	font-size: 7.1rem;
 	font-size: 7.1rem;
 }
 
@@ -207,7 +202,6 @@ h5 {
 	margin-top: 1.25rem;
 	text-align: center;
 	font-size: 1.8rem;
-	z-index: 100;
   }
 @media (max-width: 800px) {
 	h5 {
@@ -236,7 +230,6 @@ h5 {
 
 
 
-  
 :root {
 	--glow-size: 30rem;
 	--glow-size-hover: 10rem;
@@ -249,12 +242,12 @@ h5 {
 	background-color: rgb(255, 255, 255);
 	height: var(--glow-size);
 	aspect-ratio: 1;
-	position: fixed;
+	position:fixed;
 	filter: blur(var(--blur));
 	border-radius: 50%;
-	opacity: 0.6;
+	opacity: 0.4;
 	transform: translate(-50%, -50%);
-	transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out 0s, filter 0.5s;
+	transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out 0.5s, filter 0.5s;
   }
   
   
@@ -263,7 +256,7 @@ h5 {
 	height: var(--glow-size-hover);
 	background-color: rgb(255, 255, 255);
 	transform: translate(-50%, -50%) scale(1.2);
-	opacity: 0.6;
+	opacity: 0.4;
 	filter: blur(var(--blur--hover));
 	animation: animateHeight 0.4s ease-in-out;
   }
