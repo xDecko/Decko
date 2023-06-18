@@ -129,7 +129,7 @@ body {
 
 #btnarrow {
 	margin-top: 11rem;
-	animation: fade-in 3s ease-in-out infinite;
+	animation: fade-in 2s ease-in-out infinite;
 }
 #arrowSize{
 	font-size: 7rem;
@@ -147,15 +147,15 @@ body {
 
 
 .btn {
-	width: 9rem;
+	width: 10rem;
 	display: inline-block;
 	padding: 0.5rem 1rem;
 	border: 1px solid rgb(255, 255, 255);
 	background-color: rgba(238, 255, 0, 0);
 	color: #fff;
 	text-decoration: none;
-	font-weight:normal;
-	font-size: 1.8rem;
+	font-weight:bold;
+	font-size: 1.6rem;
 	transition: background-color 0.001s ease;
 }
 
@@ -169,7 +169,7 @@ body {
 
 .btn:hover {
 	background-color: #ffffff;
-	color: #661b59;
+	color: #464646;
 }
 
 .text-link {
@@ -182,14 +182,14 @@ body {
 }
 
 h1 {
-	font-family: 'raleway', sans-serif;
+	font-family: 'jost', sans-serif;
 	display: inline-block;
 	width: auto;
 	line-height: 1;
-	font-weight: lighter;
+	font-weight: bold;
 	margin: 0;
 	text-indent: center;
-	font-size: 6.8rem;
+	font-size: 7.1rem;
 }
 
 
