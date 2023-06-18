@@ -130,6 +130,7 @@ body {
 #btnarrow {
 	margin-top: 11rem;
 	animation: fade-in 2s ease-in-out infinite;
+	animation: fade-in 2s ease-in-out infinite;
 }
 #arrowSize{
 	font-size: 7rem;
@@ -148,12 +149,15 @@ body {
 
 .btn {
 	width: 10rem;
+	width: 10rem;
 	display: inline-block;
 	padding: 0.5rem 1rem;
 	border: 1px solid rgb(255, 255, 255);
 	background-color: rgba(238, 255, 0, 0);
 	color: #fff;
 	text-decoration: none;
+	font-weight:bold;
+	font-size: 1.6rem;
 	font-weight:bold;
 	font-size: 1.6rem;
 	transition: background-color 0.001s ease;
@@ -183,12 +187,15 @@ body {
 
 h1 {
 	font-family: 'jost', sans-serif;
+	font-family: 'jost', sans-serif;
 	display: inline-block;
 	width: auto;
 	line-height: 1;
 	font-weight: bold;
+	font-weight: bold;
 	margin: 0;
 	text-indent: center;
+	font-size: 7.1rem;
 	font-size: 7.1rem;
 }
 
