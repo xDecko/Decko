@@ -42,8 +42,6 @@ window.onpointermove = event => {
 
 //LIGHT EFFECTS
 
-//LIGHT EFFECTS
-
 function changeGlowSize() {
   var glow = document.getElementById("glow");
   glow.classList.remove("reset");

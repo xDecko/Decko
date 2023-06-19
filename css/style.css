@@ -193,7 +193,11 @@ h1 {
 	text-indent: center;
 	font-size: 7.1rem;
 }
-
+h2{
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 0;
+}
 
 h5 {
 	width: 57rem;
@@ -231,11 +235,11 @@ h5 {
 
 
 :root {
-	--glow-size: 30rem;
+	--glow-size: 25rem;
 	--glow-size-hover: 10rem;
 
-	--blur: 0rem;
-	--blur--hover: 0rem;
+	--blur: 12rem;
+	--blur--hover: 6rem;
   }
   
   #glow {
@@ -247,7 +251,7 @@ h5 {
 	border-radius: 50%;
 	opacity: 0.4;
 	transform: translate(-50%, -50%);
-	transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out 0.5s, filter 0.5s;
+	transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out 0.5s, filter 0.5s ease-in-out;
   }
   
   
@@ -258,7 +262,7 @@ h5 {
 	transform: translate(-50%, -50%) scale(1.2);
 	opacity: 0.4;
 	filter: blur(var(--blur--hover));
-	animation: animateHeight 0.4s ease-in-out;
+	animation: animateHeight 0.2s ease-in-out;
   }
   
   @keyframes animateHeight {
@@ -275,7 +279,7 @@ h5 {
   #glow.reset {
 	transform: translate(-50%, -50%) scale(1);
 	height: var(--glow-size);
-	animation: resetHeight 0.5s ease;
+	animation: resetHeight 0.2s ease-in-out;
   }
   
   @keyframes resetHeight {
