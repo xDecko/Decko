@@ -234,8 +234,8 @@ h5 {
 	--glow-size: 30rem;
 	--glow-size-hover: 10rem;
 
-	--blur: 12rem;
-	--blur--hover: 5rem;
+	--blur: 0rem;
+	--blur--hover: 0rem;
   }
   
   #glow {

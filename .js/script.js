@@ -46,12 +46,14 @@ window.onpointermove = event => {
 
 function changeGlowSize() {
   var glow = document.getElementById("glow");
+  glow.classList.remove("reset");
   glow.classList.add("hover");
 }
 
 function resetGlowSize() {
   var glow = document.getElementById("glow");
   glow.classList.remove("hover");
+  glow.classList.add("reset");
 }
 
 
