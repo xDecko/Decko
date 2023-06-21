@@ -3,7 +3,7 @@
 }
 
 html {
-	scroll-behavior:smooth;
+	scroll-behavior: smooth;
 }
 
 
@@ -66,9 +66,9 @@ body {
 	margin-right: 2rem;
 	justify-content: center;
 	animation: scale 0.5s ease-in-out;
-}  
+}
 
-.navbar-right:hover{
+.navbar-right:hover {
 	transform: scale(1.1);
 }
 
@@ -81,7 +81,7 @@ body {
 
 /* Container */
 
-.main{
+.main {
 	margin-bottom: 12rem;
 }
 
@@ -92,6 +92,7 @@ body {
 	align-items: center;
 	height: 100vh;
 }
+
 .content {
 	display: flex;
 	flex-direction: column;
@@ -133,15 +134,24 @@ body {
 	margin-top: 11rem;
 	animation: fade-in 2s ease-in-out infinite;
 }
-#arrowSize{
+
+#arrowSize {
 	font-size: 7rem;
 }
-  
+
 @keyframes fade-in {
-	0% { opacity: 0; }
-	50% { opacity: 1; }
-	100% { opacity: 0; }
-  }
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
 
 
 
@@ -156,7 +166,7 @@ body {
 	background-color: rgba(238, 255, 0, 0);
 	color: #fff;
 	text-decoration: none;
-	font-weight:bold;
+	font-weight: bold;
 	font-size: 1.6rem;
 	transition: background-color 0.001s ease;
 }
@@ -175,12 +185,12 @@ body {
 }
 
 .text-link {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
 h1 {
@@ -193,7 +203,8 @@ h1 {
 	text-indent: center;
 	font-size: 7.1rem;
 }
-h2{
+
+h2 {
 	font-weight: bold;
 	font-size: 2rem;
 	margin: 0;
@@ -206,12 +217,15 @@ h5 {
 	margin-top: 1.25rem;
 	text-align: center;
 	font-size: 1.8rem;
-  }
+}
+
 @media (max-width: 800px) {
 	h5 {
-	  width: 90%; /* Cambia el ancho del elemento para ocupar el 90% del contenedor */ /* Reduce el tamaño de fuente para adaptarse a pantallas más pequeñas */
+		width: 90%;
+		/* Cambia el ancho del elemento para ocupar el 90% del contenedor */
+		/* Reduce el tamaño de fuente para adaptarse a pantallas más pequeñas */
 	}
-  }
+}
 
 
 
@@ -240,58 +254,60 @@ h5 {
 
 	--blur: 12rem;
 	--blur--hover: 6rem;
-  }
-  
-  #glow {
+}
+
+#glow {
 	background-color: rgb(255, 255, 255);
 	height: var(--glow-size);
 	aspect-ratio: 1;
-	position:fixed;
+	position: fixed;
 	filter: blur(var(--blur));
 	border-radius: 50%;
 	opacity: 0.4;
 	transform: translate(-50%, -50%);
 	transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out 0.5s, filter 0.5s ease-in-out;
-  }
-  
-  
-  
-  #glow.hover {
+}
+
+
+
+#glow.hover {
 	height: var(--glow-size-hover);
 	background-color: rgb(255, 255, 255);
 	transform: translate(-50%, -50%) scale(1.2);
 	opacity: 0.4;
 	filter: blur(var(--blur--hover));
 	animation: animateHeight 0.2s ease-in-out;
-  }
-  
-  @keyframes animateHeight {
+}
+
+@keyframes animateHeight {
 	from {
-	  height: var(--glow-size);
-	  filter: blur(var(--blur));
+		height: var(--glow-size);
+		filter: blur(var(--blur));
 	}
+
 	to {
-	  height: var(--glow-size-hover);
-	  filter: blur(var(--blur--hover));
+		height: var(--glow-size-hover);
+		filter: blur(var(--blur--hover));
 	}
-  }
-  
-  #glow.reset {
+}
+
+#glow.reset {
 	transform: translate(-50%, -50%) scale(1);
 	height: var(--glow-size);
 	animation: resetHeight 0.2s ease-in-out;
-  }
-  
-  @keyframes resetHeight {
+}
+
+@keyframes resetHeight {
 	from {
-	  height: var(--glow-size-hover);
-	  filter: blur(var(--blur--hover));
+		height: var(--glow-size-hover);
+		filter: blur(var(--blur--hover));
 	}
+
 	to {
-	  height: var(--glow-size);
-	  filter: blur(var(--blur));
+		height: var(--glow-size);
+		filter: blur(var(--blur));
 	}
-  }
+}
 
 
 /* Scrollbar */
@@ -319,88 +335,159 @@ h5 {
 
 
 
-/* Footer */
 
-footer {
-	border-top: 1px solid rgb(255, 255, 255);
 
-	font-size: 1.4rem;
-	padding: 2rem;
+
+
+
+
+
+article {
+	display: grid;
+	place-items: center;
+	align-content: center;
+}
+
+
+h2 {
 	color: #ffffff;
-}
-
-footer section {
-	float: right;
-}
-
-footer p {
-	margin: 0;
-}
-
-footer a {
-	transition: color 0.3s ease;
-	color: #ffffff;
-	text-decoration: none;
-}
-
-footer a:hover {
-	color: #e4e4e4;
-}
-
-
-
-
-
-
-
-
-
-article{
-    display: grid;
-    place-items: center;
-    align-content: center;
-}
-
-
-h2{ 
-	color: #ffffff;
-    padding-top: 6rem;
-    text-align: center;
+	padding-top: 6rem;
+	text-align: center;
 	font-weight: bold;
 	font-size: 2rem;
 	margin: 0;
 }
-p{  
+
+p {
 	color: #ffffff;
-    text-align: center;
-    font-size: 1.8rem;
+	text-align: center;
+	font-size: 1.8rem;
 	width: 57rem;
-    margin: 0;
-    padding: 1rem 0rem 4rem 0rem;
+	margin: 0;
+	padding: 1rem 0rem 4rem 0rem;
 
 }
 
-section{
+section {
 
-		margin-top: 25vh;
-	
+	margin-top: 25vh;
+
 }
 
 
 
-.space{
-    min-height: 55vh;
+
+
+.space {
+	min-height: 55vh;
 }
 
 /* text transitions */
 
-.hidden{
-    opacity: 0.5;
-    filter: blur(1rem);
-    transition: all 0.6s ease-in-out;
+.hidden {
+	opacity: 0.5;
+	filter: blur(1rem);
+	transition: all 0.6s ease-in-out;
 }
-.show{
 
-    opacity: 1;
-    filter: blur(0rem);
+.show {
+
+	opacity: 1;
+	filter: blur(0rem);
+}
+
+
+
+/* FOOTER-icons */
+
+.icons-footer {
+	display: flex;
+	place-items: top;
+	justify-content: center;
+}
+
+#proyect1,
+#proyect2,
+#proyect3,
+#proyect4,
+#proyect5 {
+	filter: saturate(0.3);
+}
+
+#proyect1:hover,
+#proyect2:hover,
+#proyect3:hover,
+#proyect4:hover,
+#proyect5:hover {
+	transition: all 0.25s ease-in-out;
+	filter: saturate(1);
+}
+
+.icon-container {
+	transform: scale(1);
+	display: flex;
+	margin: 1.1rem;
+	align-items: center;
+	justify-content: center;
+	width: 6rem;
+	height: 6rem;
+	transition: all 0.4s ease-in-out;
+}
+
+.circle-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6rem;
+	height: 6rem;
+	border: 2.6px solid rgb(255, 255, 255);
+	border-radius: 2.6rem;
+	color: white;
+	transition: all 0.4s ease-in-out;
+}
+
+.circle-icon:hover {
+	border-radius: 50%;
+	border: 2.6px dashed rgb(255, 255, 255);
+	animation: rotateCircle 40s infinite linear;
+}
+
+@keyframes rotateCircle {
+	to {
+		transform: rotate(1turn);
+		/* Realiza una vuelta completa */
+	}
+}
+
+.icons {
+	position: absolute;
+	width: 2.5rem;
+	filter: invert();
+	height: 2.5rem;
+	transition: all 0.4s ease-in-out;
+}
+
+.icon-container:hover {
+	transform: scale(1.15);
+}
+
+
+.icons-footer {
+	margin-bottom: 1.4rem;
+}
+
+.copyright,
+.footer-tittle {
+	font-size: 1.3rem;
+	display: flex;
+	height: 7vh;
+	color: white;
+	align-items: top;
+	justify-content: center;
+}
+
+.footer-tittle {
+	align-items: center;
+	margin-bottom: 2rem;
+	font-size: 3rem;
 }
