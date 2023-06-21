@@ -60,6 +60,14 @@ body {
 	padding: 3rem 5rem;
 }
 
+@media (max-width: 1000px) {
+	.navbar-left img  {
+		width: 4rem;
+		padding: 1rem 1.5rem;
+	}
+
+}
+
 
 .navbar-right {
 	width: 15rem;
@@ -126,8 +134,12 @@ body {
 	justify-content: center;
 	margin-top: 1rem;
 	z-index: 1;
+}
+@media (max-width: 1000px) {
+	.btn-group {
+		transform: scale(0.8);
+	}
 
-	/* Ajusta el espacio entre los botones y el texto */
 }
 
 #btnarrow {
@@ -137,6 +149,12 @@ body {
 
 #arrowSize {
 	font-size: 7rem;
+}
+@media (max-width: 1000px) {
+	#arrowSize {
+		font-size: 4rem;
+	}
+
 }
 
 @keyframes fade-in {
@@ -203,6 +221,11 @@ h1 {
 	text-indent: center;
 	font-size: 7.1rem;
 }
+@media (max-width: 1000px) {
+	h1 {
+		font-size: 5rem;
+	}
+}
 
 h2 {
 	font-weight: bold;
@@ -218,13 +241,15 @@ h5 {
 	text-align: center;
 	font-size: 1.8rem;
 }
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	h5 {
 		width: 90%;
+		font-size: 1.5rem;
+		margin-top: 2rem;
 		/* Cambia el ancho del elemento para ocupar el 90% del contenedor */
 		/* Reduce el tamaño de fuente para adaptarse a pantallas más pequeñas */
 	}
+
 }
 
 
@@ -340,13 +365,13 @@ h5 {
 
 
 
+.hover-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
 
 
-article {
-	display: grid;
-	place-items: center;
-	align-content: center;
-}
 
 
 h2 {
@@ -359,24 +384,42 @@ h2 {
 }
 
 p {
+	justify-content: center;
 	color: #ffffff;
-	text-align: center;
 	font-size: 1.8rem;
 	width: 57rem;
 	margin: 0;
 	padding: 1rem 0rem 4rem 0rem;
+	text-align: center;
+
+
+}
+@media (max-width: 1000px) {
+	p {
+		font-size: 1.5rem;
+		width: 90%;
+	}
 
 }
 
+
 section {
-
 	margin-top: 25vh;
-
+}
+@media (max-width: 1000px) {
+	section {
+		margin-top: 5vh;
+	}
 }
 
 
 .space {
 	min-height: 55vh;
+}
+@media (max-width: 1000px) {
+	.space {
+		min-height: 10vh;
+	}
 }
 
 /* text transitions */
@@ -472,6 +515,11 @@ section {
 .icons-footer {
 	margin-bottom: 1.4rem;
 }
+@media (max-width: 1000px) {
+	footer {
+		transform: scale(0.6)
+	}
+}
 
 .copyright,
 .footer-tittle {
@@ -482,11 +530,22 @@ section {
 	align-items: top;
 	justify-content: center;
 }
+@media (max-width: 1000px) {
+	.copyright{
+		height: 2vh;
+	}
+}
+
 
 .footer-tittle {
 	align-items: center;
 	margin-bottom: 2rem;
 	font-size: 3rem;
+}
+@media (max-width: 1000px) {
+	.footer-tittle{
+		font-size: 2.2rem;
+	}
 }
 
 
@@ -498,9 +557,12 @@ section {
     display:flex;
     place-items: top;
     justify-content: center;
-    width: 100%;
     height: 10vh;
-    
+}
+@media (max-width: 1000px) {
+	#test {
+		transform: scale(0.6)
+	}
 }
 
 
