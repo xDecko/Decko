@@ -1,5 +1,6 @@
 * {
 	font-family: 'Jost', sans-serif;
+	color: rgb(255, 255, 255);
 }
 
 html {
@@ -233,7 +234,7 @@ h2 {
 	margin: 0;
 }
 
-h5 {
+h3 {
 	width: 57rem;
 	font-weight: lighter;
 	margin: 0;
@@ -242,15 +243,38 @@ h5 {
 	font-size: 1.8rem;
 }
 @media (max-width: 1000px) {
-	h5 {
+	h3 {
 		width: 90%;
 		font-size: 1.5rem;
 		margin-top: 2rem;
 		/* Cambia el ancho del elemento para ocupar el 90% del contenedor */
 		/* Reduce el tamaño de fuente para adaptarse a pantallas más pequeñas */
 	}
-
 }
+
+h5{
+
+	font-size: 0.4rem;
+	font-weight: lighter;
+	text-align: center;
+
+	width: 4rem;
+	position: absolute;
+	margin-top: 4rem;
+	opacity: 0;
+}
+
+.circles:hover > h5 {
+	/* Estilos que deseas aplicar cuando el div esté en hover */
+
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+  }
+
+
+
+
+
 
 
 
