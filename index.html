@@ -20,9 +20,8 @@
     <img src="/decko/decko.ico" alt="Ícono">
   </div>
   <div class="navbar-right">
-
-    <a id="nav-btn-left"> <span class="material-symbols-outlined">headphones</span></a>
-    <a id="nav-btn-right" onclick="toggleFullscreen()"><span class="material-symbols-outlined">fullscreen</span></a>
+    <a class="nav-btn"  href="mailto:deckocol@gmail.com" target="_blank" onmouseover="changeGlowSize()"
+    onmouseout="resetGlowSize()">Let's talk!</a>
   </div>
 </nav>
 
@@ -74,12 +73,8 @@
             <div class="hover-section" >
               <p class="hidden"  onmouseover="changeGlowSize(); handleHover()"
               onmouseout="resetGlowSize(); handleHover()">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum gravida enim, id
-                ullamcorper
-                leo
-                pretium ac. Quisque vehicula, felis in condimentum vulputate, ante leo tristique felis, id ultricies
-                risus
-                orci sed mi.
+              As a passionate multimedia engineer, I love to transform ideas into reality  using different skills and learning  new ones to create innovative, visually attractive and functional products.
+
               </p>
             </div>
             <div class="hidden" id="test"  onmouseover="handleHover()"
@@ -117,12 +112,7 @@
             <div class="hover-section">
             <p class="hidden"  onmouseover="changeGlowSize(); handleHover()"
             onmouseout="resetGlowSize(); handleHover()">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum gravida enim, id
-              ullamcorper
-              leo
-              pretium ac. Quisque vehicula, felis in condimentum vulputate, ante leo tristique felis, id ultricies
-              risus
-              orci sed mi.</p>
+            Utilizing diverse programming languages and libraries, we shape the digital landscape, crafting striking websites and innovative applications, bringing to life projects through code.</p>
             </div>
 
             <div class="hidden" id="test"  onmouseover="handleHover()"
@@ -340,6 +330,16 @@
 <script src=".js/butter.js"></script>
 <script src=".js/script.js"></script>
 <!-- Smooth Scrol -->
-<script>butter.init();</script>
+<script>
+  butter.init();
+</script>
+
+<script>
+  var options = {
+    cancelOnTouch: true
+  };
+  butter.init(options);
+</script>
+
 
 </html>
