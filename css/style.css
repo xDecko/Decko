@@ -1,19 +1,15 @@
 * {
 	font-family: 'Jost', sans-serif;
-	color: rgb(255, 255, 255);
 }
 
 html {
-	scroll-behavior: smooth;
-}
-
-
-body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	margin: 0;
 }
+
+
 
 @keyframes gradient {
 	0% {
@@ -59,37 +55,39 @@ body {
 	width: 6rem;
 	margin: 4rem 0rem 0rem 6rem;
 }
+
 @media (max-width: 1000px) {
-	.navbar-left img  {
+	.navbar-left img {
 		width: 4rem;
 		margin: 1rem 1.5rem;
 	}
 }
 
-.nav-btn{
+.nav-btn {
 	position: absolute;
 	width: 11rem;
 	margin: 4rem 0rem 0rem 1rem;
 	text-decoration: none;
+	color: white;
 	padding: 0.3rem;
 	font-weight: bold;
 	font-size: 3.1rem;
 	text-align: center;
 	border-radius: 5px;
 	transition: all 0.3s ease-in-out;
-	
+
 }
-.nav-btn:hover{
+
+.nav-btn:hover {
 	transform: scale(1.15);
 }
+
 @media (max-width: 1000px) {
 	.nav-btn {
 		transform: scale(0.8);
 		margin: 1rem 0rem 0rem 6.5rem;
 		font-size: 2.5rem;
 
-		/* Cambia el ancho del elemento para ocupar el 90% del contenedor */
-		/* Reduce el tamaño de fuente para adaptarse a pantallas más pequeñas */
 	}
 }
 
@@ -148,6 +146,7 @@ body {
 	margin-top: 1rem;
 	z-index: 1;
 }
+
 @media (max-width: 1000px) {
 	.btn-group {
 		transform: scale(0.8);
@@ -163,6 +162,7 @@ body {
 #arrowSize {
 	font-size: 7rem;
 }
+
 @media (max-width: 1000px) {
 	#arrowSize {
 		font-size: 4rem;
@@ -234,6 +234,7 @@ h1 {
 	text-indent: center;
 	font-size: 7.1rem;
 }
+
 @media (max-width: 1000px) {
 	h1 {
 		font-size: 5rem;
@@ -254,18 +255,17 @@ h3 {
 	text-align: center;
 	font-size: 1.8rem;
 }
+
 @media (max-width: 1000px) {
 	h3 {
 		width: 90%;
 		font-size: 1.5rem;
 		margin-top: 2rem;
-		/* Cambia el ancho del elemento para ocupar el 90% del contenedor */
-		/* Reduce el tamaño de fuente para adaptarse a pantallas más pequeñas */
 	}
 }
 
-h5{
-
+h5 {
+	color: white;
 	font-size: 0.4rem;
 	font-weight: lighter;
 	text-align: center;
@@ -276,12 +276,10 @@ h5{
 	opacity: 0;
 }
 
-.circles:hover > h5 {
-	/* Estilos que deseas aplicar cuando el div esté en hover */
-
+.circles:hover>h5 {
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
-  }
+}
 
 
 
@@ -405,7 +403,7 @@ h5{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  }
+}
 
 
 
@@ -430,6 +428,7 @@ p {
 
 
 }
+
 @media (max-width: 1000px) {
 	p {
 		font-size: 1.5rem;
@@ -442,6 +441,7 @@ p {
 section {
 	margin-top: 25vh;
 }
+
 @media (max-width: 1000px) {
 	section {
 		margin-top: 5vh;
@@ -452,6 +452,7 @@ section {
 .space {
 	min-height: 55vh;
 }
+
 @media (max-width: 1000px) {
 	.space {
 		min-height: 10vh;
@@ -551,6 +552,7 @@ section {
 .icons-footer {
 	margin-bottom: 1.4rem;
 }
+
 @media (max-width: 1000px) {
 	footer {
 		transform: scale(0.6)
@@ -566,8 +568,9 @@ section {
 	align-items: top;
 	justify-content: center;
 }
+
 @media (max-width: 1000px) {
-	.copyright{
+	.copyright {
 		height: 2vh;
 	}
 }
@@ -578,8 +581,9 @@ section {
 	margin-bottom: 2rem;
 	font-size: 3rem;
 }
+
 @media (max-width: 1000px) {
-	.footer-tittle{
+	.footer-tittle {
 		font-size: 2.2rem;
 	}
 }
@@ -589,12 +593,13 @@ section {
 
 /* text transitions */
 
-#test{
-    display:flex;
-    place-items: top;
-    justify-content: center;
-    height: 10vh;
+#test {
+	display: flex;
+	place-items: top;
+	justify-content: center;
+	height: 10vh;
 }
+
 @media (max-width: 1000px) {
 	#test {
 		transform: scale(0.6)
@@ -602,10 +607,10 @@ section {
 }
 
 
-.show{
+.show {
 
-    opacity: 1;
-    filter: blur(0rem);
+	opacity: 1;
+	filter: blur(0rem);
 }
 
 
@@ -613,41 +618,44 @@ section {
 
 
 .circles {
-    display: flex;
-    margin: 2rem 4.4rem 0rem 4.4rem;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border: 1px solid rgb(255, 255, 255); /* Agregamos el borde */
-    background-color: transparent; /* Quitamos el fondo */
-    transition: all 0.7s ease-in-out;
+	display: flex;
+	margin: 2rem 4.4rem 0rem 4.4rem;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	border: 1px solid rgb(255, 255, 255);
+	/* Agregamos el borde */
+	background-color: transparent;
+	/* Quitamos el fondo */
+	transition: all 0.7s ease-in-out;
 }
 
-  
+
 .circles.hover {
 
 	transform: scale(4);
-    border: 1px solid rgb(255, 255, 255)
-  }
-  
+	border: 1px solid rgb(255, 255, 255)
+}
 
-  
-  .image{
-    background: white;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    transition: opacity 0.5s ease-in-out;
 
-    
 
-  }
-  .image.yolo {
-    opacity: 1;
+.image {
+	background: white;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	transition: opacity 0.5s ease-in-out;
+
+
+
+}
+
+.image.yolo {
+	opacity: 1;
 }

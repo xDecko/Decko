@@ -1,35 +1,3 @@
-//Audio
-document.addEventListener('DOMContentLoaded', function () {
-  var audio = document.getElementById('miAudio');
-  var isPlaying = false;
-
-  document.body.addEventListener('mouseover', function () {
-    if (!isPlaying) {
-      audio.volume = 0.05;
-      try {
-        audio.play();
-        isPlaying = true;
-      } catch (error) {
-        console.log("La reproducción automática del audio fue bloqueada por el navegador.");
-      }
-    }
-  });
-
-  document.body.addEventListener('click', function () {
-    if (isPlaying) {
-      audio.muted = true;
-      isPlaying = false;
-    } else {
-      audio.volume = 0.05;
-      audio.muted = false;
-      isPlaying = true;
-    }
-  });
-});
-
-
-
-
 
 //CURSOR LIGHT
 
@@ -94,7 +62,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
-//BOLAS DE NIEVE
+//circles
 
 function handleHover() {
   var circles = document.getElementsByClassName("circles");
