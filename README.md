@@ -1,7 +1,7 @@
 
 # Decko
 
-Semi-pure HTML and CSS landing page project
+Landing page project
 
 Description:
 
